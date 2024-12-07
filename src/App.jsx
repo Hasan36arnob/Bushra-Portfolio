@@ -171,7 +171,98 @@ const Portfolio = () => {
     {
       title:
         "Quality Program Standard for WASH intervention in WaterAid Projects ",
-      description: "Associated with WaterAid",
+      description: "Associated with WaterAid ",
+      link: "#",
+    },
+    {
+      title: " WASH design review (Rainwater harvesting, Reverse osmosis plant",
+      description: "Associated with WaterAid ",
+      link: "#",
+    },
+    {
+      title: "Paikgacha hydrogeological study phase II (2025)  ",
+      description: "Associated with WaterAid ",
+      link: "#",
+    },
+    {
+      title: " carbon accounting",
+      description: " Associated with THiNK ",
+      link: "#",
+    },
+    {
+      title: " carbon trapping ",
+      description: "Associated with THiNK",
+      link: "#",
+    },
+    {
+      title: " development of AI enabled mosquito trap",
+      description: " Associated with THiNK ",
+      link: "#",
+    },
+    {
+      title: " Sea Level Rise Assessment for the Coastline of Bangladesh",
+      description: "Associated with Institute of Water Modelling ",
+      link: "#",
+    },
+    {
+      title: " Urban Heat Island Assessment for Dhaka",
+      description: "Associated with Institute of Water Modelling",
+      link: "#",
+    },
+    {
+      title: " Joint Cooperation Program Bangladesh the Netherlands ",
+      description: "Associated with Institute of Water Modelling ",
+      link: "#",
+    },
+    {
+      title:
+        " Mathemetical modelling of drainage and Landuse Planning of Sonadia Island for Eco-tourism ",
+      description: " Associated with Institute of Water Modelling",
+      link: "#",
+    },
+    {
+      title:
+        " Dredging Feasibility Assessment of the Eastern Hill Rivers in Bangladesh ",
+      description: " Associated with Institute of Water Modelling  ",
+      link: "#",
+    },
+    {
+      title:
+        "  Feasibility Study of Old Brahmaputra River Dredging for IWRM and Navigation",
+      description: "Associated with Institute of Water Modelling  ",
+      link: "#",
+    },
+    {
+      title:
+        " Extreme Flow Analysis in Climate Change Scenario for Jamuneshwari river basin in Bangladesh ",
+      description: "Associated with KU Leuven(Master's thesis)",
+      link: "#",
+    },
+    {
+      title:
+        "  Development of Environmental Flow Assessment Methodology for the Sundarbans",
+      description:
+        " Associated with Center for Environmental and Geographic In formation Services (CEGIS)",
+      link: "#",
+    },
+    {
+      title:
+        " WATSAN (water supply and sanitation assessment) for vulnerable hotspots in Bangladesh ",
+      description:
+        "Associated with Center for Environmental and Geographic In formation Services (CEGIS) ",
+      link: "#",
+    },
+    {
+      title:
+        " Mathematical model for drainage network of Teesta Barrage Project (Phase 2 Unit I)",
+      description:
+        " Associated with Center for Environmental and Geographic In formation Services (CEGIS)",
+      link: "#",
+    },
+    {
+      title: " Drought Risk Assessment and Climate Change",
+      description:
+        " Associated with Center for Environmental and Geographic In formation Services (CEGIS) ",
       link: "#",
     },
   ];
