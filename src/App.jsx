@@ -20,9 +20,10 @@ const Portfolio = () => {
   // }, []);
   useEffect(() => {
     AOS.init({
-      duration: 800,
-      once: false,
-      mirror: true,
+      duration: 500, // faster animation
+      easing: "ease-in-out", // smoother easing
+      offset: 50, // trigger animations earlier
+      once: true, // only animate once
     });
   }, []);
 
@@ -87,7 +88,7 @@ const Portfolio = () => {
 
       duration: "Oct 2016 - Mar 2019 · 2 yrs 6 mos",
       description:
-        "Spatial Planning · Training Courses · Coastal Processes · Environmental Policy · Policy Advice",
+        "Project Planning · Arcgis Products · Team Management · Numerical Analysis · Adaptation · Mathematical Modeling · Technical Reports · Microsoft PowerPoint",
     },
     {
       company:
@@ -273,7 +274,7 @@ const Portfolio = () => {
       <nav className="bg-gray-300 shadow-sm fixed w-full top-0 z-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between items-center h-16">
-            <span className="text-xl font-bold">Bushra M.D. </span>
+            <span className="text-xl font-bold"> Bushra Monowar Duti </span>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
@@ -369,20 +370,17 @@ const Portfolio = () => {
           </div>
         )}
       </nav>
-
-      {/* Main Content */}
-      {/* Main Content */}
       <main className="max-w-6xl mx-auto px-4 py-8 mt-16">
         {/* Hero Section */}
         <section
           id="about"
-          className="text-center py-20 bg-gradient-to-r from-gray-400 via-gray-300 to-gray-400 rounded-lg shadow-lg"
+          className="text-center py-20 bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 rounded-lg shadow-lg"
           data-aos="fade-up"
         >
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-gray-800">
-            Bushra M.D.
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-white">
+            Bushra Monowar Duti
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
             Experienced Water Resources Engineer with 12+ years in business
             development, project management, data analytics, and consultancy in
             water, environment, and climate, alongside expertise in education,
@@ -395,13 +393,13 @@ const Portfolio = () => {
           >
             <a
               href="https://www.linkedin.com/in/bushra-monowar-d-88b8091b/"
-              className="text-gray-600 hover:text-blue-600 transform hover:scale-110 transition-transform"
+              className="text-gray-300 hover:text-blue-400 transform hover:scale-110 transition-transform"
             >
               <Linkedin size={36} />
             </a>
             <a
               href="https://scholar.google.com/citations?user=jkWVzUQAAAAJ&hl=en"
-              className="text-gray-600 hover:text-blue-600 transform hover:scale-110 transition-transform"
+              className="text-gray-300 hover:text-blue-400 transform hover:scale-110 transition-transform"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -409,7 +407,7 @@ const Portfolio = () => {
             </a>
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=bushra.monowar@gmail.com"
-              className="text-gray-600 hover:text-blue-600 transform hover:scale-110 transition-transform"
+              className="text-gray-300 hover:text-blue-400 transform hover:scale-110 transition-transform"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -419,11 +417,14 @@ const Portfolio = () => {
         </section>
 
         {/* Experience Section */}
-        <section id="experience" className="py-16">
+        <section
+          id="experience"
+          className="py-16 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-center"
+        >
           <h2
-            className="text-3xl md:text-4xl font-extrabold mb-8 text-gray-800"
-            data-aos="fade-right"
-            data-aos-duration="600"
+            className="text-3xl md:text-4xl font-extrabold mb-8 text-white"
+            data-aos="fade-up"
+            data-aos-duration="400"
           >
             Experience
           </h2>
@@ -431,29 +432,31 @@ const Portfolio = () => {
             {experiences.map((exp, index) => (
               <div
                 key={index}
-                className="bg-gray-300 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-blue-500"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
-                data-aos-duration="800"
               >
-                <h3 className="text-2xl font-semibold text-gray-800">
+                <h3 className="text-2xl font-semibold text-white">
                   {exp.position}
                 </h3>
-                <p className="text-gray-700 mb-2">
+                <p className="text-gray-400 mb-2">
                   {exp.company} • {exp.duration}
                 </p>
-                <p className="text-gray-600">{exp.description}</p>
+                <p className="text-gray-300">{exp.description}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* Education Section */}
-        <section id="education" className="py-16">
+        <section
+          id="education"
+          className="py-16 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-center"
+        >
           <h2
-            className="text-3xl md:text-4xl font-extrabold mb-8 text-gray-800"
-            data-aos="fade-right"
-            data-aos-duration="600"
+            className="text-3xl md:text-4xl font-extrabold mb-8 text-white"
+            data-aos="fade-up"
+            data-aos-duration="400"
           >
             Education
           </h2>
@@ -461,29 +464,31 @@ const Portfolio = () => {
             {education.map((edu, index) => (
               <div
                 key={index}
-                className="bg-gray-300 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-teal-500"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
-                data-aos-duration="800"
               >
-                <h3 className="text-xl font-semibold text-gray-800">
+                <h3 className="text-xl font-semibold text-white">
                   {edu.school}
                 </h3>
-                <p className="text-gray-700 mb-2">
+                <p className="text-gray-400 mb-2">
                   {edu.degree} • {edu.duration}
                 </p>
-                <p className="text-gray-600">{edu.description}</p>
+                <p className="text-gray-300">{edu.description}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* Certifications Section */}
-        <section id="Certifications" className="py-16">
+        <section
+          id="Certifications"
+          className="py-16 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-center"
+        >
           <h2
-            className="text-3xl md:text-4xl font-extrabold mb-8 text-gray-800"
-            data-aos="fade-right"
-            data-aos-duration="600"
+            className="text-3xl md:text-4xl font-extrabold mb-8 text-white"
+            data-aos="fade-up"
+            data-aos-duration="400"
           >
             Licenses & Certifications
           </h2>
@@ -491,26 +496,28 @@ const Portfolio = () => {
             {Certifications.map((cert, index) => (
               <div
                 key={index}
-                className="bg-gray-300 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-green-500"
                 data-aos="zoom-in"
                 data-aos-delay={index * 100}
-                data-aos-duration="800"
               >
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                <h3 className="text-xl font-semibold mb-2 text-white">
                   {cert.title}
                 </h3>
-                <p className="text-gray-600">{cert.description}</p>
+                <p className="text-gray-300">{cert.description}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="py-16">
+        <section
+          id="projects"
+          className="py-16 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-center"
+        >
           <h2
-            className="text-3xl md:text-4xl font-extrabold mb-8 text-gray-800"
-            data-aos="fade-right"
-            data-aos-duration="600"
+            className="text-3xl md:text-4xl font-extrabold mb-8 text-white"
+            data-aos="fade-up"
+            data-aos-duration="400"
           >
             Projects
           </h2>
@@ -518,16 +525,14 @@ const Portfolio = () => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="bg-gray-300 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-purple-500"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
-                data-aos-duration="800"
               >
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                <h3 className="text-xl font-semibold text-white mb-2">
                   {project.title}
                 </h3>
-
-                <p className="text-gray-600 mt-2">{project.description}</p>
+                <p className="text-gray-300 mt-2">{project.description}</p>
               </div>
             ))}
           </div>
@@ -538,7 +543,7 @@ const Portfolio = () => {
       <footer className="bg-gray-300 border-t">
         <div className="max-w-6xl mx-auto px-4 py-8">
           <p className="text-center text-gray-600">
-            © 2024 Bushra M.D. All rights reserved.
+            © 2024 Bushra Monowar Duti All rights reserved.
           </p>
         </div>
       </footer>
